@@ -1,0 +1,67 @@
+After more than 5 years as a research engineer in France, I decided to take full control of my life.
+I decided in October 2021 to leave everything to start my entrepreneurial activity, learn Data Science from scratch, and work with companies around the world.
+I document my adventure on social media. I tell my story and experience through podcasts and conferences.
+I see life as an epic adventure, where I am the hero of my own story, seeking to gain experience points in the range of skills that characterize me.
+
+
+Concerning my education, I have done all my studies in France. After succeeding preparatory classes for the French "Grandes Ecoles", I got an engineer degree at ENSEM (Ecole Nationale Supérieure d'Electricité et de Mécanique) in 2016. I also got a PhD in physics (heat transfers & fluid mechanics) in 2021, in partnership with EDF, TOTAL and the LTEN in Nantes. 
+
+
+Ph.D. : Research Engineer in Offshore Energies
+March 2018 - July 2021
+City : Nantes - France
+• Context : offshore energies industries are concerned about thermal constraints imposed on cables installed on offshore wind farms and oil platforms.
+• Propose technical solutions to cool the cable by 11%, based on statistical
+analysis. The developed model was compared to a one-year measurement
+data set acquired on an existing offshore platform.
+• Estimate, design and supervise the setting up of a 15k€ experimental model.
+Rigorous exploitation is performed. Manage planning and set up progress
+review meetings with stakeholders in strict compliance with the timetable.
+• Organize, synthesize & communicate results to stakeholders and business
+units (Canada, UK, France). Expose results in international conferences and
+journals. Potential cost and risk reduction solutions are submitted.
+
+
+Data Analyst - Consultant
+February 2017 - February 2018
+City : Paris - France
+• Analyze technical-economic data and develop tools with Excel/VBA to manage activities. Present weekly advances to the executive committee.
+• Propose solutions to optimize project management and team-working with
+industrial actors. Advanced tools are delivered to the client.
+• Have started from scratch. After one year, supervise a group of 4 consultants
+& communicate with the industrial client to ensure satisfaction & a good
+relationship.
+
+
+Research & Development Engineer
+March 2016 – August 2016
+City : Paris - France
+• Study & improve the industrial production of laminated glasses in Europe.
+Solutions are provided, reducing the cost of production & improving the
+quality of the product.
+• Plan and perform measurements on a reduced model in lab & on industrial
+sites using infrared measurements and thermocouples in strict compliance
+with the production schedule.
+• Present business-oriented results to experts & managers.
+
+
+I have done two online certifications in Data Science:
+• 365 Data Science - The complete Data Science Bootcamp
+• Natural Language Processing Specialization
+
+
+I am an expert in Natural Language Processing. Depending on your objectives, I develop solutions using artificial intelligence and deploy models into your application within a team of developers.
+
+
+For my clients around the world, I have:
+ 📄 Automated information extraction from legal documents and contracts through an API created within an IT team,
+ 🤖 Built an intelligent assistant to chat with to learn everything about documents,
+ ✍️ Written articles popularizing the latest technological innovations and methods around NLP,
+ 💵 Won a multi-million contract with a team of sales as the NLP expert,
+And more...
+
+
+I was born in Bourges, in Central France. I lived for 20 years in a little city called Fussy. I spent time with my friends doing things I'm not allowed to share with you =) (but I can share that I particularly enjoyed this time)
+
+
+Dancing is one of my passions. I love it! I have danced Bachata for almost 5 years now. Bachata is a latin dance from Dominican Republic, and is danced all over the world. I also play guitar and I love play Nothing Else Matters from Metallica.
