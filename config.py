@@ -6,7 +6,7 @@ import os
 chunk_size = 1000
 chunk_overlap = 0
 separator = "\n\n\n"
-chain_type = "stuff"
+chain_type = "map_reduce"
 k = 2 # Number of chunks to consider for the answer
 
 # [OpenAI]
