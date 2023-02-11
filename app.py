@@ -11,21 +11,20 @@ logging.basicConfig(level=logging.INFO)
 LOGGER = logging.getLogger(__name__)
 
 
-def answer(question: str) -> str:
+def answer() -> str:
     """Answer any question relative to me.
-
-    Args:
-        question (str): Question asked by the user
 
     Returns:
         str: The answer based on the infomation provided about me.
     """
-    with open(config.DOCSEARCH_PATH, 'rb') as f:
-        docsearch = pickle.load(f)
-    personal_assistant = PersonalAssistant(docsearch=docsearch)
-    answer = personal_assistant.answer(question=question)
-    LOGGER.info(f"The question is '{question}' and the answer is '{answer}'")
-    st.session_state.answer = answer
+    if "question" in st.session_state:
+        with open(config.DOCSEARCH_PATH, 'rb') as f:
+            docsearch = pickle.load(f)
+        personal_assistant = PersonalAssistant(docsearch=docsearch)
+        question = st.session_state.question
+        answer = personal_assistant.answer(question=question)
+        LOGGER.info(f"The question is '{question}' and the answer is '{answer}'")
+        st.session_state.answer = answer
 
 
 if __name__ == "__main__":
@@ -36,7 +35,7 @@ if __name__ == "__main__":
         on_change=answer
     )
 
-    if "answer" in st.session_state:
+    if st.session_state.question:
         st.write(st.session_state.answer)
 
     
