@@ -1,0 +1,5 @@
+streamlit
+langchain==0.0.79
+openai==0.26.5
+faiss-cpu==1.7.3
+tiktoken==0.1.2

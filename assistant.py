@@ -76,13 +76,13 @@ class PersonalAssistant():
             str: Answer generated with the LLM
         """
         with get_openai_callback() as cb:
+            
             chain = VectorDBQA.from_chain_type(
                 llm=self.llm,
                 chain_type=config.chain_type, 
                 vectorstore=self.docsearch,
                 verbose=config.verbose
             )
-            self.sources = self.get_sources(query=question) #  TODO: Already considered in VectorDBQAWithSourcesChain but impossible to retrieve
             answer = chain.run(question)
             LOGGER.info(f"Number of tokens used for answering: {cb.total_tokens}")
         return answer
