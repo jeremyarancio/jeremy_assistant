@@ -3,27 +3,23 @@ import logging
 
 import streamlit as st   
 
-from assistant import PersonalAssistant
-import config
+from assistant.personal_assistant import PersonalAssistant
 
 
-logging.basicConfig(level=logging.INFO)
 LOGGER = logging.getLogger(__name__)
 
 
 def answer() -> str:
-    """Answer any question relative to me.
+    """Answer the question.
 
     Returns:
-        str: The answer based on the infomation provided about me.
+        str: The answer based on the infomation provided.
     """
-    if "question" in st.session_state:
-        with open(config.DOCSEARCH_PATH, 'rb') as f:
-            docsearch = pickle.load(f)
-        personal_assistant = PersonalAssistant(docsearch=docsearch)
-        question = st.session_state.question
-        answer = personal_assistant.answer(question=question)
-        LOGGER.info(f"The question is '{question}' and the answer is '{answer}'")
+    if "query" in st.session_state:
+        personal_assistant = PersonalAssistant()
+        query = st.session_state.query
+        answer = personal_assistant.answer(query=query)
+        LOGGER.info(f"The question is '{query}' and the answer is '{answer}'")
         st.session_state.answer = answer
 
 
@@ -31,11 +27,11 @@ if __name__ == "__main__":
 
     st.text_input(
         "What do you want to know about me?", 
-        key="question",
+        key="query",
         on_change=answer
     )
 
-    if st.session_state.question:
+    if st.session_state.query:
         st.write(st.session_state.answer)
 
     

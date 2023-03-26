@@ -7,7 +7,7 @@ chunk_size = 1000
 chunk_overlap = 0
 separator = "\n\n\n"
 chain_type = "map_reduce"
-k = 2 # Number of chunks to consider for the answer
+k = 1 # Number of chunks to consider for the answer
 
 # [OpenAI]
 embedding_model = "text-embedding-ada-002"
@@ -23,6 +23,10 @@ logprobs = None
 verbose = True
 
 # [PATHS]
-DATA = Path(os.path.realpath(os.path.dirname(__file__))) / "data"
+DATA = Path(os.path.realpath(os.path.dirname(__file__))).parent / "data"
 PERSONAL_INFO_PATH = DATA / "me.txt"
 DOCSEARCH_PATH = DATA / "docsearch.pkl"
+VECTORDB_DIR = DATA / "vectordb"
+
+# [Semantic Search]
+model_name = "sentence-transformers/all-mpnet-base-v2" # https://www.sbert.net/docs/pretrained_models.html
