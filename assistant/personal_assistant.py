@@ -1,6 +1,3 @@
-from langchain.llms import OpenAI
-from langchain.vectorstores import Chroma
-
 import logging
 
 from assistant.semantic_search import SemanticSearch

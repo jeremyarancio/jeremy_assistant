@@ -1,7 +1,7 @@
 # jeremy_assistant
 This AI can ask any questions you would have about me! 👋
 
-The application is deployed with Streamlit: [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://jeremyarancio-jeremy-assistant-app-5k6qkn.streamlit.app/)
+Link to the app: Soon...
 
 ## How does it work?
 Informations about me are divided into chunks
