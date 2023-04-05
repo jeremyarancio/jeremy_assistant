@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: personal-chatbot-001
+    region: frankfurt
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    numInstances: 1
+    branch: main
