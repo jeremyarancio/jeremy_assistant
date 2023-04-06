@@ -1,7 +1,7 @@
 # jeremy_assistant
 This AI can answer any questions you would have about me! 👋
 
-Link to the app: [![Streamlit App](https://personal-chatbot.streamlit.app/)
+Link to the app: [![Streamlit App](https://personal-chatbot.streamlit.app/)]
 
 ## How does it work?
 Informations about me are divided into chunks
