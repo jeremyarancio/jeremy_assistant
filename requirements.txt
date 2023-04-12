@@ -1,5 +1,6 @@
-langchain==0.0.121
+langchain==0.0.137
 sentence-transformers==2.2.2
 streamlit==1.18.1
 chromadb==0.3.17
 memory-profiler==0.61.0
+openai==0.27.4
