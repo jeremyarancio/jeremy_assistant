@@ -5,6 +5,9 @@ name: Python app
 
 on: [push]
 
+env: 
+  OPENAI_API_KEY: ${{secrets.OPENAI_API_KEY}}
+
 jobs:
   build:
 
@@ -25,7 +28,5 @@ jobs:
         pip install pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Test with pytest
-      env: 
-          OPENAI_API_KEY: ${{Secret.OPENAI_API_KEY}}
       run: |
         python -m pytest
