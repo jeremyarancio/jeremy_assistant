@@ -21,7 +21,7 @@ class SemanticSearch():
     model: HuggingFaceEmbeddings
 
     def __init__(self,
-                 model_name: str = config.model_name,
+                 model_name: str = config.sbert_model_name,
                  **kwargs
         ) -> None:
         self.model_name = model_name
@@ -48,7 +48,7 @@ class SemanticSearch():
             raise FileNotFoundError(f"{doc} does not exist.")
         
     def search(self, query: str, vectordb_dir: str = str(config.VECTORDB_DIR),
-               k: int = config.k) -> List[Tuple[Document, float]]:
+               k: int = config.k) -> List[Document]:
         """From a query, find the elements corresponding based on personal information stored in vectordb.
         Euclidian distance is used to find the closest vectors.
 
@@ -60,8 +60,10 @@ class SemanticSearch():
             List[Tuple[Document, float]]: Elements corresponding to the query based on semantic search, associated
         with their respective score.
         """
+        LOGGER.info("Enter vector search module.")
         timestamp = time.time()
         vectordb = Chroma(persist_directory=vectordb_dir, embedding_function=self.model)
-        results = vectordb.similarity_search_with_score(query=query, k=k)
+        results = vectordb.similarity_search(query=query, k=k)
+        LOGGER.info("Exit vector search module.")
         LOGGER.info(f"It took {time.time() - timestamp} to search elements with semantic search.")
         return results

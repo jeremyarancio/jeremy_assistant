@@ -4,7 +4,7 @@ import os
 
 # [Chunking]
 separator = "\n\n\n"
-k = 1 # Number of chunks to consider for the answer
+k = 2 # Number of chunks to consider for the answer
 
 # [PATHS]
 DATA = Path(os.path.realpath(os.path.dirname(__file__))).parent / "data"
@@ -13,4 +13,10 @@ DOCSEARCH_PATH = DATA / "docsearch.pkl"
 VECTORDB_DIR = DATA / "vectordb"
 
 # [Semantic Search]
-model_name = "sentence-transformers/all-mpnet-base-v2" # https://www.sbert.net/docs/pretrained_models.html
+sbert_model_name = "sentence-transformers/all-mpnet-base-v2" # https://www.sbert.net/docs/pretrained_models.html
+
+# [OpenAI]
+temperature = 0
+model_name = "text-davinci-002"
+max_tokens = 256
+openai_organization = "Personal"
