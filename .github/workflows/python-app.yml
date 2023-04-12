@@ -25,5 +25,7 @@ jobs:
         pip install pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Test with pytest
+      env: 
+          OPENAI_API_KEY: ${{Secret.SECRET_TOKEN}}
       run: |
         python -m pytest

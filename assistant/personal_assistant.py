@@ -15,7 +15,7 @@ logging.basicConfig(level=logging.INFO)
 class PersonalAssistant():
     """Chatbot assistant."""
     def __init__(self, **kwargs) -> None:
-        openai_api_key = os.getenv("OPENAI_API_KEY")
+        openai_api_key = os.environ["OPENAI_API_KEY"]
         self.llm = OpenAI(temperature=config.temperature, 
                           model_name=config.model_name, max_tokens=config.max_tokens, 
                           openai_api_key=openai_api_key, **kwargs)
