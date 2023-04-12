@@ -1,4 +1,4 @@
-from assistant.personal_assistant import SemanticSearch
+from assistant.semantic_search import SemanticSearch
 
 def test_search():
     query = "Where did Jeremy study?"
