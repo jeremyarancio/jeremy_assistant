@@ -3,8 +3,6 @@ This AI can answer any questions you would have about me! 👋
 
 Link to the app: [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://personal-chatbot.streamlit.app/)
 
-*App currently in development*
-
 ## How does it work?
 Informations about me are divided into chunks
 
@@ -21,3 +19,5 @@ If you want to know more the process, check these articles below:
 ## Futur work
 * Use an open-source LLM model
 * Implement the chatbot into the website
+* Expand personal data
+* Improve output quality with better prompt engineering
