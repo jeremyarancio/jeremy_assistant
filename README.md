@@ -1,6 +1,8 @@
 # jeremy_assistant
 This AI can answer any questions you would have about me! 👋
 
+![example](./images/example.png)
+
 Link to the app: [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://personal-chatbot.streamlit.app/)
 
 ## How does it work?
